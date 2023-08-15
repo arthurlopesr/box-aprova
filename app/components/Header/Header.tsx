@@ -22,8 +22,8 @@ export function Header() {
         <Image
           src="/images/logo.svg"
           alt="logo notion enenm"
-          width={58}
-          height={49}
+          width={68}
+          height={59}
         />
         <nav className="flex items-center gap-4 sm:gap-8">
           {NAV_ITENS.map(item => (
