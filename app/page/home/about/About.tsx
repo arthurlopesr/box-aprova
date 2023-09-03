@@ -16,13 +16,12 @@ export function About() {
           />
 
           <p>
-            O template no Notion dedicado à preparação para o ENEM é uma ferramenta essencial para estudantes que buscam o sucesso nesse exame desafiador. Com ele, você pode criar um plano de estudos personalizado, definir metas claras e monitorar seu progresso em todas as disciplinas. <br className="mt-1"/>
+            O template no Notion dedicado à preparação para o ENEM é uma ferramenta essencial para estudantes que buscam o sucesso nesse exame desafiador. Com ele, você pode criar um plano de estudos personalizado, definir metas claras e monitorar seu progresso em todas as disciplinas. <br className="mt-1" />
 
-            O template oferece seções específicas para cada matéria, permitindo que você organize recursos, anotações e exercícios de forma eficiente. Além disso, possui um calendário integrado para agendar revisões e simulados. <br className="mt-1"/>
+            <br className="mt-1" />  O template oferece seções específicas para cada matéria, permitindo que você organize recursos, anotações e exercícios de forma eficiente. Além disso, possui um calendário integrado para agendar revisões e simulados. <br className="mt-1" />
 
-            A funcionalidade de rastreamento de desempenho permite que você avalie seu progresso ao longo do tempo, identificando áreas de foco. Ele também oferece dicas e técnicas de estudo para otimizar sua preparação. <br className="mt-1"/>
-
-            Em resumo, o template no Notion é uma ferramenta valiosa para a preparação do ENEM, simplificando o processo de estudo e aumentando suas chances de aprovação. Comece a usá-lo hoje e esteja mais perto de alcançar seus objetivos acadêmicos. <br className="mt-1"/>
+            <br className="mt-1" /> A funcionalidade de rastreamento de desempenho permite que você avalie seu progresso ao longo do tempo, identificando áreas de foco. Ele também oferece dicas e técnicas de estudo para otimizar sua preparação. <br className="mt-1" />          
+            
           </p>
         </div>
       </div>

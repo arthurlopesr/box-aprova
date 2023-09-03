@@ -1,4 +1,5 @@
 import { About } from "./page/home/about/About";
+import { Access } from "./page/home/access/Access";
 import { HeroSection } from "./page/home/heroSection/HeroSection";
 
 export default async function Home() {
@@ -6,6 +7,7 @@ export default async function Home() {
     <>
       <HeroSection />
       <About />
+      <Access />
     </>
   )
 }
