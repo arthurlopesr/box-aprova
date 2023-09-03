@@ -3,6 +3,43 @@ import Image from "next/image";
 import { FiCheck } from "react-icons/fi"
 import { SiNotion } from "react-icons/si"
 
+const LIST_MOCK = [
+  {
+    id: 1,
+    title: 'Centralização de Informações',
+  },
+  {
+    id: 2,
+    title: 'Controle de Revisão',
+  },
+  {
+    id: 3,
+    title: 'Flexibilidade na Estruturação',
+  },
+  {
+    id: 4,
+    title: 'Gerenciamento de Tarefas',
+  },
+  {
+    id: 5,
+    title: 'To-do list',
+  },
+  {
+    id: 6,
+    title: 'Portabilidade',
+  },
+  {
+    id: 7,
+    title: 'Acompanhe seus Hábitos',
+  },
+  {
+    id: 8,
+    title: 'Mais produtividade',
+  }
+
+
+]
+
 interface HeroSectionProps {
 
 }
@@ -27,46 +64,13 @@ export function HeroSection(props: HeroSectionProps) {
           </p>
 
           <div className="grid grid-cols-2 items-start justify-between flex-col-reverse lg:flex-row gap-5 mt-10">
-
-            <p>
+          
+          {LIST_MOCK.map((item) => (
+            <p key={item.id}>
               <FiCheck className="inline-block mr-2 text-emerald-400 font-semibold" />
-              Centralização de Informações
+              {item.title}
             </p>
-
-            <p>
-              <FiCheck className="inline-block mr-2 text-emerald-400 font-semibold" />
-              Controle de Revisão
-            </p>
-
-            <p>
-              <FiCheck className="inline-block mr-2 text-emerald-400 font-semibold" />
-              Flexibilidade na Estruturação
-            </p>
-
-            <p>
-              <FiCheck className="inline-block mr-2 text-emerald-400 font-semibold" />
-              Gerenciamento de Tarefas
-            </p>
-
-            <p>
-              <FiCheck className="inline-block mr-2 text-emerald-400 font-semibold" />
-              To-do list
-            </p>
-
-            <p>
-              <FiCheck className="inline-block mr-2 text-emerald-400 font-semibold" />
-              Portabilidade
-            </p>
-
-            <p>
-              <FiCheck className="inline-block mr-2 text-emerald-400 font-semibold" />
-              Acompanhe seus Hábitos
-            </p>
-
-            <p>
-              <FiCheck className="inline-block mr-2 text-emerald-400 font-semibold" />
-              Mais produtividade
-            </p>
+          ))}
 
           </div>
 
