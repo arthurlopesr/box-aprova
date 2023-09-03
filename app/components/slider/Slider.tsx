@@ -27,13 +27,16 @@ export function Slider() {
     function handleResize() {
       if (window.innerWidth < 640) {
         setSliderPreview(1)
-      } else {
+      } 
+      else if (window.innerWidth < 1024) {
+        setSliderPreview(2)
+      }
+      else {
         setSliderPreview(3)
       }
     }
 
     handleResize();
-
     window.addEventListener('resize', handleResize)
 
     return () => {
@@ -52,7 +55,7 @@ export function Slider() {
       {data.map((item) => (
         <SwiperSlide key={item.id}>
           <Image 
-            className='w-[300] h-[300] flex items-center justify-center object-cover mt-10'
+            className='w-[300] h-[300] flex items-center justify-center object-cover mt-[60px]'
             src={item.image} 
             alt="slider" 
             width={300}

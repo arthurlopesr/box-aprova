@@ -33,7 +33,6 @@ export function Access() {
       </div>
 
       <Bonus />
-
       <Slider />
     </div>
   )
