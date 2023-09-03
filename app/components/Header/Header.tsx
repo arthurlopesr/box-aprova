@@ -8,10 +8,6 @@ const NAV_ITENS = [
   {
     label: 'Inicial',
     href: '/'
-  },
-  {
-    label: 'Sobre',
-    href: '/about'
   }
 ]
 
