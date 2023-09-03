@@ -1,4 +1,5 @@
 import { AccessCard } from "@/app/components/accessCard/AccessCard";
+import { Slider } from "@/app/components/slider/Slider";
 import { Bonus } from "@/app/components/bonus/Bonus";
 
 export function Access() {
@@ -7,8 +8,8 @@ export function Access() {
       <h1 className="font-bold text-3xl text-[#01B8A8]">
         Você terá acesso:
       </h1>
-      
-      <div className="w-full my-8 border-b border-b-gray-800"/>
+
+      <div className="w-full my-8 border-b border-b-gray-800" />
 
       <div className="w-full grid grid-cols-[repeat(auto-fit,minmax(264px,1fr))] gap-10 mt-[60px]">
         <AccessCard
@@ -33,7 +34,7 @@ export function Access() {
 
       <Bonus />
 
+      <Slider />
     </div>
-
   )
 }
