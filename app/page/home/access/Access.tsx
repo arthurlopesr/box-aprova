@@ -1,4 +1,5 @@
 import { AccessCard } from "@/app/components/accessCard/AccessCard";
+import { Bonus } from "@/app/components/bonus/Bonus";
 
 export function Access() {
   return (
@@ -29,6 +30,8 @@ export function Access() {
           phrase="Cronômetro pomodoro e quantidade de blocos de estudo realizados."
         />
       </div>
+
+      <Bonus />
 
     </div>
 
