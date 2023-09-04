@@ -1,7 +1,10 @@
+'use client'
+
 import { Button } from "@/app/components/button/Button";
 import Image from "next/image";
 import { FiCheck } from "react-icons/fi"
 import { SiNotion } from "react-icons/si"
+import { motion } from 'framer-motion';
 
 const LIST_MOCK = [
   {
@@ -47,7 +50,12 @@ export function HeroSection(props: HeroSectionProps) {
   return (
     <section className="w-full lg:h-[755px] bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-10 sm:pb-32 py-32 lb:pb[110px]">
       <div className="container flex items-start justify-between flex-col-reverse lg:flex-row">
-        <div className="w-full lg:max-w-[530px] flex flex-col items-center justify-center">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -100 }}
+          transition={{ duration: 0.5 }}
+        >
 
           <Image
             src="/images/hero-icon.svg"
@@ -64,14 +72,18 @@ export function HeroSection(props: HeroSectionProps) {
           </p>
 
           <div className="grid grid-cols-2 items-start justify-between flex-col-reverse lg:flex-row gap-5 mt-10">
-          
-          {LIST_MOCK.map((item) => (
-            <p key={item.id}>
-              <FiCheck className="inline-block mr-2 text-emerald-400 font-semibold" />
-              {item.title}
-            </p>
-          ))}
-
+            {LIST_MOCK.map((item, i) => (
+              <motion.p
+                key={item.id}
+                initial={{ opacity: 0, x: 1 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <FiCheck className="inline-block mr-2 text-emerald-400 font-semibold" />
+                {item.title}
+              </motion.p>
+            ))}
           </div>
 
           <div className="flex mt-10 items-center">
@@ -83,15 +95,22 @@ export function HeroSection(props: HeroSectionProps) {
             </Button>
           </div>
 
-        </div>
+        </motion.div>
 
-        <Image
-          className="rounded-2xl"
-          width={520}
-          height={504}
-          src="/images/profile-pic2.png"
-          alt="profile-pic"
-        />
+        <motion.div
+          initial={{ opacity: 0, y: 200, scale: 0.5 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: 200, scale: 0.5 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Image
+            className="rounded-2xl"
+            width={520}
+            height={504}
+            src="/images/profile-pic2.png"
+            alt="profile-pic"
+          />
+        </motion.div>
       </div>
     </section>
   )

@@ -1,13 +1,22 @@
+'use client'
+
 import Image from "next/image";
 import { FiCheck } from "react-icons/fi";
-import { Button } from "../button/Button";
 import { ButtonSales } from "../buttonSales/ButtonSales";
+import { motion } from 'framer-motion'
 
 export function SalesCard() {
   return (
     <div className="container">
       <div className="flex justify-center mt-[60px]">
-        <div className="w-[700px] h-[1080px] bg-white p-7 text-center rounded-3xl flex flex-col items-center">
+        <motion.div
+          className="w-[700px] h-[1080px] bg-white p-7 text-center rounded-3xl flex flex-col items-center"
+          initial={{ opacity: 0, y: 200, scale: 0.5 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: 200, scale: 0.5 }}
+          transition={{ duration: 0.5 }}
+
+        >
           <h2 className="text-xl font-bold text-gray-700">
             Para adquirir seu planejador ENEM, só no lançamento:
           </h2>
@@ -67,7 +76,7 @@ export function SalesCard() {
               QUERO O MEU PLANER ENEM!
             </a>
           </ButtonSales>
-        </div>
+        </motion.div>
 
       </div>
     </div>
