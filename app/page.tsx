@@ -12,8 +12,8 @@ export default async function Home() {
       <HeroSection />
       <About />
       <Access />
-      <Author />
       <SalesCard />
+      <Author />
       <Footer />
     </>
   )

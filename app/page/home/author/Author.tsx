@@ -42,9 +42,6 @@ export function Author() {
 
           </motion.p>
         </motion.div>
-
-
-        <div className="w-full my-8 border-b border-b-gray-800" />
       </div>
     </>
   )
