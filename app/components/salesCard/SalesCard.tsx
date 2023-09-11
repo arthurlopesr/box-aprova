@@ -10,13 +10,7 @@ export function SalesCard() {
     <div className="container">
       <div className="flex justify-center mt-[60px]">
         <motion.div
-          className="w-[700px] h-[1080px] bg-white p-7 text-center rounded-3xl flex flex-col items-center"
-          initial={{ opacity: 0, y: 200, scale: 0.5 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          exit={{ opacity: 0, y: 200, scale: 0.5 }}
-          transition={{ duration: 0.5 }}
-
-        >
+          className="w-[700px] h-[1080px] bg-white p-7 text-center rounded-3xl flex flex-col items-center"        >
           <h2 className="text-xl font-bold text-gray-700">
             Para adquirir seu planejador ENEM, só no lançamento:
           </h2>

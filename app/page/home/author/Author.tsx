@@ -3,12 +3,12 @@
 import Image from "next/image";
 import { motion } from 'framer-motion';
 
-export function About() {
+export function Author() {
   return (
     <>
       <div className="container py-16">
         <h1 className="font-bold text-3xl text-[#01B8A8]">
-          Sobre:
+          Apresentação da autora:
         </h1>
 
         <div className="w-full my-8 border-b border-b-gray-800" />
@@ -20,7 +20,7 @@ export function About() {
           transition={{ duration: 0.5 }}
         >
           <Image
-            src="/images/about-image.png"
+            src="/images/raissa.jpeg"
             width={365}
             height={365}
             alt="about-image"
@@ -33,14 +33,18 @@ export function About() {
             exit={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5 }}
           >
-            O template no Notion dedicado à preparação para o ENEM é uma ferramenta essencial para estudantes que buscam o sucesso nesse exame desafiador.<br className="mt-1" />
+            Como vai, futuro aprovado?<br className="mt-1" />
 
-            <br className="mt-1" />  O template oferece seções específicas para cada matéria, permitindo que você organize recursos, anotações e exercícios de forma eficiente. Além disso, possui um calendário integrado para agendar revisões e simulados. <br className="mt-1" />
+            <br className="mt-1" />  Meu nome é Raíssa Magalhães, estudante de Medicina da <span className="font-bold">UFMG</span> e autora do seu <b>Notion ENEM</b>. Criei um template com todas as ferramentas e automações que otimizaram meu tempo em uma fase tão difícil como o vestibular. A partir de organização e planejamento estratégico fui conseguindo escalar meus resultados até os tão sonhados <span className="font-bold text-[#01B8A8]">818,3 de média</span>.
+            <br className="mt-1" />
 
-            <br className="mt-1" /> A funcionalidade de rastreamento de desempenho permite que você avalie seu progresso ao longo do tempo, identificando áreas de foco.<br className="mt-1" />
+            <br className="mt-1" />Use e abuse de todo e template, que esse material também te leve ao seu último ENEM!⚡️<br className="mt-1" />
 
           </motion.p>
         </motion.div>
+
+
+        <div className="w-full my-8 border-b border-b-gray-800" />
       </div>
     </>
   )

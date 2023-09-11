@@ -50,7 +50,6 @@ export function Slider() {
     <Swiper
       slidesPerView={sliderPreview}
       pagination={{ clickable: true }}
-      navigation
     >
       {data.map((item) => (
         <SwiperSlide key={item.id}>

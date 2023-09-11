@@ -14,6 +14,16 @@ const plexMono = IBM_Plex_Mono({
   weight: ['400', '500'],
 })
 
+export const metadata = {
+  title: 'Box Aprova',
+  icons: [
+    {
+      url: '/favicon.jpg',
+    }
+  ]
+}
+
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR" className={`${inter.variable} ${plexMono.variable}`}>

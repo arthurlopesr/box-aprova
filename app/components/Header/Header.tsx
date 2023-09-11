@@ -21,11 +21,11 @@ export function Header() {
           width={68}
           height={59}
         />
-        <nav className="flex items-center gap-4 sm:gap-8">
+        {/* <nav className="flex items-center gap-4 sm:gap-8">
           {NAV_ITENS.map(item => (
             <NavItem {...item} key={item.label} />
           ))}
-        </nav>
+        </nav> */}
       </div>
 
     </header>
