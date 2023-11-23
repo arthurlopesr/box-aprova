@@ -1,3 +1,4 @@
+import { Black } from "./components/black";
 import { SalesCard } from "./components/salesCard/SalesCard";
 import { About } from "./page/home/about/About";
 import { Access } from "./page/home/access/Access";
@@ -9,6 +10,7 @@ import { HeroSection } from "./page/home/heroSection/HeroSection";
 export default async function Home() {
   return (
     <>
+      <Black />
       <HeroSection />
       <About />
       <Access />

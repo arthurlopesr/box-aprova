@@ -12,7 +12,7 @@ export function SalesCard() {
         <motion.div
           className="w-[700px] h-[1080px] bg-white p-7 text-center rounded-3xl flex flex-col items-center"        >
           <h2 className="text-xl font-bold text-gray-700">
-            Para adquirir seu planejador ENEM, só no lançamento:
+            Para adquirir seu planejador ENEM, só na BLACK FRIDAY:
           </h2>
 
           <div className="flex items-start flex-col">
@@ -59,15 +59,15 @@ export function SalesCard() {
             de <span className="line-through text-gray-400">R$ 87,90</span> por
           </p>
           <p className="text-2xl font-bold text-gray-500 mt-3 text-start lg:text5xl">
-            R$47,90 à vista
+            R$27,90 à vista
           </p>
           <p className="text-lg font-bold text-emerald-700 mt-3 text-start lg:text-xl">
-            ou até 6x de R$8,84
+            ou até 6x de R$5,15
           </p>
 
           <ButtonSales >
-            <a href="https://pay.kiwify.com.br/0PEPFEH" target="_blank">
-              QUERO O MEU PLANER ENEM!
+            <a href="https://pay.kiwify.com.br/2nrkppN" target="_blank">
+              QUERO APROVEITAR A BLACK!
             </a>
           </ButtonSales>
         </motion.div>
