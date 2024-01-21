@@ -66,7 +66,7 @@ export function SalesCard() {
           </p>
 
           <ButtonSales >
-            <a href="https://pay.kiwify.com.br/0PEPFEH" target="_blank">
+            <a href="https://pay.kiwify.com.br/Hn2eytl" target="_blank">
               QUERO O MEU PLANER ENEM!
             </a>
           </ButtonSales>

@@ -89,7 +89,7 @@ export function HeroSection(props: HeroSectionProps) {
           <div className="flex mt-10 items-center">
             <Button>
               <SiNotion />
-              <a href="https://pay.kiwify.com.br/0PEPFEH" target="_blank">
+              <a href="https://pay.kiwify.com.br/Hn2eytl" target="_blank">
                 QUERO O MEU PLANER ENEM!
               </a>
             </Button>
