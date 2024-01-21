@@ -62,7 +62,7 @@ export function SalesCard() {
             R$67,90 à vista
           </p>
           <p className="text-lg font-bold text-emerald-700 mt-3 text-start lg:text-xl">
-            ou até 6x de R$11.32
+            ou até 6x de R$12,53
           </p>
 
           <ButtonSales >
