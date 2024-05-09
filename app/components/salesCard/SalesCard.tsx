@@ -59,14 +59,14 @@ export function SalesCard() {
             de <span className="line-through text-gray-400">R$ 87,90</span> por
           </p>
           <p className="text-2xl font-bold text-gray-500 mt-3 text-start lg:text5xl">
-            R$67,90 à vista
+            R$47,90 à vista
           </p>
           <p className="text-lg font-bold text-emerald-700 mt-3 text-start lg:text-xl">
-            ou até 6x de R$12,53
+            ou até 6x de R$8,84
           </p>
 
           <ButtonSales >
-            <a href="https://pay.kiwify.com.br/Hn2eytl" target="_blank">
+            <a href="https://pay.kiwify.com.br/v9jvfx4" target="_blank">
               QUERO O MEU PLANER ENEM!
             </a>
           </ButtonSales>
